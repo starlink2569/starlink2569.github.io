@@ -1,6 +1,6 @@
-# พุทธทาส 6 แผ่น — คลังเสียงธรรมะ
+# ธรรมะจากท่านพุทธทาส
 
-Mobile responsive PWA สำหรับค้นหาและเปิดฟังไฟล์ MP3 จาก OneDrive public share ของผู้ใช้
+Mobile responsive PWA สำหรับค้นหาและเปิดฟังธรรมะจากท่านพุทธทาสจาก OneDrive public share
 
 ## Features
 - Search ชื่อตอน เลขตอน หมวดหมู่
