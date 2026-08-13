@@ -48,8 +48,8 @@
       <section id="library" class="view active">
         <div class="search-panel">
           <label class="searchbox"><span>🔎</span><input id="searchInput" placeholder="ค้นหาชื่อตอน หมวดหมู่ เลขตอน เช่น อานาปานสติ" autocomplete="off" /></label>
-          <div class="filters"><select id="albumFilter"><option value="">ทุกแผ่น</option></select><select id="categoryFilter"><option value="">ทุกหมวดหมู่</option></select><button id="clearBtn">ล้าง</button></div>
-          <div class="quick-actions"><button id="shuffleBtn">🔀 Shuffle</button><button id="repeatBtn" data-mode="off">🔁 Repeat: off</button><button id="shareAppBtn">📤 Share app</button></div>
+          <div class="filters"><select id="albumFilter"><option value="">ทุกแผ่น</option></select><select id="categoryFilter"><option value="">ทุกหมวดหมู่</option></select><button id="clearBtn" class="icon-btn" title="ล้างตัวกรอง" aria-label="ล้างตัวกรอง"><span class="material-symbols-rounded">close</span></button></div>
+          <div class="quick-actions"><button id="shuffleBtn" class="icon-btn" title="สุ่มตอน" aria-label="สุ่มตอน"><span class="material-symbols-rounded">shuffle</span></button><button id="repeatBtn" class="icon-btn" data-mode="off" title="Repeat: off" aria-label="Repeat: off"><span class="material-symbols-rounded">repeat</span></button><button id="shareAppBtn" class="icon-btn" title="แชร์แอป" aria-label="แชร์แอป"><span class="material-symbols-rounded">ios_share</span></button></div>
         </div>
         <div id="chips" class="chips"></div>
         <div class="section-head"><h2>รายการเสียง</h2><span id="resultCount"></span></div>
