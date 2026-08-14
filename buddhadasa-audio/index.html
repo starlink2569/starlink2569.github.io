@@ -65,15 +65,14 @@
         <h2>คู่มือใช้งานภาษาไทย</h2>
         <ol>
           <li>พิมพ์คำค้น เช่น ชื่อตอน เลขตอน หรือหมวดหมู่ในช่องค้นหา</li>
-          <li>ตอนที่ขึ้นสัญลักษณ์ 🎧 จะเล่นในหน้าเว็บได้ทันทีจากไฟล์ static ที่ฝังมากับเว็บ</li>
-          <li>ตอนอื่น ๆ ที่ยังไม่มีไฟล์ local จะเปิดผ่าน OneDrive preview แทน เพื่อคงต้นทุน 0 บาท</li>
+          <li>กดปุ่ม ▶ เพื่อเปิดฟังตอนนั้นใน OneDrive preview</li>
           <li>กด ♡ เพื่อบันทึกเป็นรายการโปรดในเครื่องนี้</li>
           <li>ใช้ Shuffle เพื่อสุ่มตอน และ Repeat เพื่อวนซ้ำโหมดเล่น</li>
           <li>กด Share เพื่อส่งลิงก์แอปหรือคลิปเสียงให้เพื่อนทาง Line/Facebook/Telegram</li>
           <li>กด “ติดตั้งแอป” หรือ Add to Home Screen บน iOS/Android เพื่อใช้เหมือนแอป</li>
         </ol>
         <h3>หมายเหตุเรื่องการเล่นเสียง</h3>
-        <p>เวอร์ชันฟรี 100% นี้ใช้ static hosting เป็นหลัก จึงพยายามเล่นจากไฟล์ที่ฝังมากับเว็บก่อน และ fallback ไปที่ OneDrive public preview สำหรับตอนที่ยังไม่ได้ย้ายมาเป็นไฟล์ static ค่ะ</p>
+        <p>ไฟล์เสียงเก็บอยู่บน OneDrive แบบ public share แอปนี้เปิดไฟล์ผ่าน OneDrive preview โดยตรง เพื่อให้ลิงก์เสียงไม่หมดอายุและไม่ต้องฝัง token ชั่วคราวลงใน GitHub Pages</p>
       </section>
 
 
@@ -86,12 +85,8 @@
       <button id="prevBtn" title="ก่อนหน้า">⏮</button>
       <button id="playBtn" class="big" title="เปิดฟัง">▶</button>
       <button id="nextBtn" title="ถัดไป">⏭</button>
-      <button id="openOneDrive" title="เปิดต้นทาง" aria-label="เปิดต้นทาง">☁️</button>
+      <button id="openOneDrive" title="เปิดใน OneDrive" aria-label="เปิดใน OneDrive">☁️</button>
       <button id="shareTrackBtn" title="แชร์ตอนนี้" aria-label="แชร์ตอนนี้">📤</button>
-    </div>
-    <div class="player-inline">
-      <audio id="audioEl" controls preload="none"></audio>
-      <p id="playbackHint" class="player-hint">เลือกตอนที่ต้องการฟังได้เลยค่ะ</p>
     </div>
   </footer>
   <script src="./app.js"></script>
